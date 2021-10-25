@@ -14,16 +14,32 @@
             @enderror
         </div>
         <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Umur</label>
+            <input type="text" class="form-control" name="umur" id="exampleInputPassword1" value="{{ old('umur') }}">
+            @error('umur')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
+        </div>
+        <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">No Telepon</label>
-            <input type="text" class="form-control" name="no_tlp" id="exampleInputPassword1" value="{{ old('no_tlp') }}">
+            <input type="text" class="form-control" name="no_tlp" id="exampleInputPassword1"
+                value="{{ old('no_tlp') }}">
             @error('no_tlp')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Alamat</label>
-            <input type="text" class="form-control" name="alamat" id="exampleInputPassword1" value="{{ old('alamat') }}">
+            <input type="text" class="form-control" name="alamat" id="exampleInputPassword1"
+                value="{{ old('alamat') }}">
             @error('alamat')
+                <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Hobi</label>
+            <input type="text" class="form-control" name="hobi" id="exampleInputPassword1" value="{{ old('hobi') }}">
+            @error('hobi')
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
